@@ -34,6 +34,9 @@ class B2_API b2EdgeShape : public b2Shape
 public:
 	b2EdgeShape();
 
+	/// Load constructor for libraries. Doesn't initialise.
+	b2EdgeShape(Load) {}
+
 	/// Set this as a part of a sequence. Vertex v0 precedes the edge and vertex v3
 	/// follows. These extra vertices are used to provide smooth movement
 	/// across junctions. This also makes the collision one-sided. The edge

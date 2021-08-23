@@ -32,6 +32,9 @@ class B2_API b2CircleShape : public b2Shape
 public:
 	b2CircleShape();
 
+	/// Load constructor for libraries. Doesn't initialise.
+	b2CircleShape(Load) {}
+
 	/// Implement b2Shape.
 	b2Shape* Clone(b2BlockAllocator* allocator) const override;
 

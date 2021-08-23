@@ -34,6 +34,9 @@ class B2_API b2PolygonShape : public b2Shape
 public:
 	b2PolygonShape();
 
+	/// Load constructor for libraries. Doesn't initialise.
+	b2PolygonShape(Load) {}
+
 	/// Implement b2Shape.
 	b2Shape* Clone(b2BlockAllocator* allocator) const override;
 

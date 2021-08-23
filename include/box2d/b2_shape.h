@@ -58,6 +58,11 @@ public:
 		e_typeCount = 4
 	};
 
+	enum Load
+	{
+		e_load
+	};
+
 	virtual ~b2Shape() {}
 
 	/// Clone the concrete shape using the provided allocator.

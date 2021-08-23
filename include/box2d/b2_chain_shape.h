@@ -38,6 +38,9 @@ class B2_API b2ChainShape : public b2Shape
 public:
 	b2ChainShape();
 
+	/// Load constructor for libraries. Doesn't initialise.
+	b2ChainShape(Load) {}
+
 	/// The destructor frees the vertices using b2Free.
 	~b2ChainShape();
 
